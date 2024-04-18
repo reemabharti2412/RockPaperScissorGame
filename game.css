@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-color: #89c15e;
+    font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.heading{
+    border: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    margin: 8vh 20vw;
+    padding: 15px;
+    border-radius: 15px;
+}
+.score{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width:17%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+     font-size: 1.1rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 50%;
+    font-size:1.5rem;
+    font-weight: bold;
+    line-height: 0px;
+}
+.score h1{
+  font-size: 4rem;
+  margin: 0px;
+}
+.upper{
+    display: flex;
+
+}
+.choice{
+    border-radius: 50%;
+    background-color:white ;
+    width: 90px;
+    height: 90px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose{
+    height: 40vh;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.upper img{
+margin: 20px;
+}
+#rock{
+    border: 15px solid #0074B6;
+}
+#scissor{
+    border: 15px solid #BD00FF;
+}
+#paper{
+    border: 15px solid #FFA943;
+}
+
+.card{
+    position: fixed;
+    right: 40px;
+    bottom: 70px;
+}
+.rules{
+    background-color: rgb(3, 61, 3);
+    border: 6px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+   
+}
+.cross{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    border: 6px solid white;
+    position:absolute;
+    right: -40px;
+    top:  -40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cross img{
+    width: 40px ;
+    height: 40px;
+}
+ul li{
+    list-style-type: square;
+   
+}
+li::marker{
+    color: yellow;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+#msg{
+ font-size: 2rem ;
+ 
+ margin: 0px;
+ 
+}
+
+.result{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preresult{
+    width: 66vw;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
+#resultText{
+    color: aliceblue;
+    text-align: center;
+}
+#resultText button ,.final button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.result2 .choice{
+    margin: 0px 120px;
+    position: relative;
+}
+
+.circles {
+    position: relative;
+    top: -55px;
+    left: -55px;
+    > div {
+      animation: growAndFade 1.5s infinite ease-out;
+      background-color: #289a27;
+      border-radius: 50%;
+      opacity: 0;
+      width: 200px;
+      height: 200px;
+      
+      z-index: -1;
+      position: absolute;
+    }
+    
+    .circle1 {
+      animation-delay: 0s;    
+    }
+    .circle2 {
+      animation-delay: 0.5s; 
+    }
+    .circle3 {
+      animation-delay: 1s;
+    }
+  }
+  
+  @keyframes growAndFade {
+    0% {
+      opacity: 1;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+  }
+  
+.resC{
+    display: block;
+    position: relative;
+
+}
+.resC .resultCard{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.bt{
+    background-color:  #89c15e;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    color:white;
+    
+}
+.btmbtn{
+    
+    font-size: 1.4rem;
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+}
+#next{
+    display: none;
+}
+.finalImg{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.final {
+    height: 90vh;
+    display: none;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+    font-size: 2rem;
+    line-height: 14px;
+}

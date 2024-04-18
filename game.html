@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <div class="left">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+
+      <div class="score">
+        <p>COMPUTER SCORE</p>
+        <h1 id="computerScore">0</h1>
+      </div>
+
+      <div class="score">
+        <p>YOUR SCORE</p>
+        <h1 id="yourScore">0</h1>
+      </div>
+    </div>
+
+    <div class="choose">
+      <div class="upper">
+        <div class="choice" id="rock">
+          <img src="rock.png" alt="rock" />
+        </div>
+
+        <div class="choice" id="scissor">
+          <img src="scissor.png" alt="scissor" />
+        </div>
+      </div>
+
+      <div class="lower">
+        <div class="choice" id="paper">
+          <img src="paper.png" alt="paper" />
+        </div>
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="preresult">
+        <h4>Your Pick</h4>
+        <h4>PC Pick</h4>
+      </div>
+      <div class="result2">
+        <div class="choice resC">
+          <div class="circles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+          </div>
+          <img src="rock.png" class="resultCard" alt="rock" />
+        </div>
+       
+        <div id="resultText">
+            <div class="msg-container">
+                <h3 id="msg"></h3>
+              </div>
+            <p>AGAINST PC</p>
+            <button onclick="playAgain()">PLAY AGAIN</button>
+        </div>
+        <div class="choice resC">
+          <img src="scissor.png" class="resultCard" alt="scissor" />
+        </div>
+      </div>
+    </div>
+    <div class="final">
+      <img src="bg.png" alt="">
+
+      <div>
+        <h1>HOORAY!!</h1>
+        <h3>YOU WON THE GAMES</h3>
+      </div>
+      <button onclick="playAgain()">PLAY AGAIN</button>
+    </div>
+    <div id="rulesCard" class="card">
+      <div class="cross" onclick="toggle(0)">
+        <img src="X.png" alt="cross" />
+      </div>
+      <div class="rules">
+        <h1>Game Rules</h1>
+        <ul>
+          <li>
+            Rock beats scissors, scissors beat<br />
+            paper, and paper beats rock.
+          </li>
+          <br />
+          <li>
+            Agree ahead of time whether you’ll<br />
+            count off “rock, paper, scissors,<br />
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <br />
+          <li>
+            Use rock, paper, scissors to settle<br />
+            minor decisions or simply play to<br />
+            pass the time
+          </li>
+          <br />
+          <li>
+            If both players lay down the same<br />
+            hand, each player lays down another<br />
+            hand
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="btmbtn">
+        <button class="bt" id="rulesbtn" onclick="toggle(1)">RULES</button>
+        <button class="bt" id="next" onclick="nextPage()">NEXT</button>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
